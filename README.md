@@ -6,7 +6,8 @@ Server handling data from hwm client
 * Running webserver with vhost/location pointing to web folder
 
 ## Configuration
-Copy .env.dist to .env
+Copy file .env.dist to .env
+
 Fill .env variables
 
 | Variable          | Description                                                  |
