@@ -1,0 +1,26 @@
+{
+    "name": "skydive-marius/hwm-measurement",
+    "description": "Server handling data from hwm client",
+    "type": "project",
+    "license": "GNUv3",
+    "authors": [
+        {
+            "name": "Marius Meissner",
+            "email": "info@marius-meissner.net"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "phpunit/phpunit": "^6.2",
+        "vlucas/phpdotenv": "^2.4",
+        "influxdb/influxdb-php": "^1.14",
+        "symfony/http-foundation": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "SkydiveMarius\\HWM\\Server\\": "",
+            "SkydiveMarius\\HWM\\Server\\Src\\": "src",
+            "SkydiveMarius\\HWM\\Server\\Tests\\": "tests"
+        }
+    }
+}
