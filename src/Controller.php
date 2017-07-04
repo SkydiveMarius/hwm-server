@@ -73,7 +73,8 @@ class Controller
      */
     private function authenticate(Request $request)
     {
-        if ($request->get('api-token') !== $this->apiToken) {
+        if ($request->headers->get('api-token') !== $this->apiToken
+            && $request->get('api-token') !== $this->apiToken) {
             throw new \InvalidArgumentException('Wrong API token submitted');
         }
     }
