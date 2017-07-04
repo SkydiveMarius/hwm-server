@@ -1,5 +1,5 @@
 <?php
-namespace SkydiveMarius\HWM\Server\Src\CLI;
+namespace SkydiveMarius\HWM\Server\Src;
 
 use InfluxDB\Client;
 use InfluxDB\Database;
@@ -8,7 +8,7 @@ use InfluxDB\Point;
 /**
  * Class InfluxDbRepository
  *
- * @package SkydiveMarius\HWM\Server\Src\CLI
+ * @package SkydiveMarius\HWM\Server\Src
  */
 class InfluxDbRepository
 {

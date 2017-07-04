@@ -14,7 +14,8 @@
         "phpunit/phpunit": "^6.2",
         "vlucas/phpdotenv": "^2.4",
         "influxdb/influxdb-php": "^1.14",
-        "symfony/http-foundation": "^3.3"
+        "symfony/http-foundation": "^3.3",
+        "beberlei/assert": "^2.7"
     },
     "autoload": {
         "psr-4": {
