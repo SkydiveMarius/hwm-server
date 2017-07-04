@@ -31,7 +31,7 @@ class InfluxDbRepository
     public function __construct(Client $client = null, string $database = null)
     {
         $this->client = $client ?: new Client(getenv('INFLUXDB_HOST'), getenv('INFLUXDB_PORT'), getenv('INFLUXDB_USERNAME'), getenv('INFLUXDB_PASSWORD'));
-        $this->database = $this->client->selectDB($database ?: getenv('INFLUXDB_DB'));
+        $this->database = $this->client->selectDB($database ?: getenv('INFLUXDB_DATABASE'));
     }
 
     /**
