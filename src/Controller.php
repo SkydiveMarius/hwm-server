@@ -63,7 +63,7 @@ class Controller
         $data = json_decode($request->getContent(), true);
         Assertion::isArray($data);
         Assertion::keyIsset($data, 'average');
-        Assertion::float($data['average']);
+        Assertion::numeric($data['average']);
 
         $this->repository->add($data['average']);
     }

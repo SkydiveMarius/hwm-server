@@ -69,7 +69,7 @@ class ControllerTest extends TestCase
 
         self::assertInstanceOf(JsonResponse::class, $response);
         self::assertEquals(500, $response->getStatusCode());
-        self::assertEquals(['code' => 9, 'message' => 'Value "abc" is not a float.'], json_decode($response->getContent(), true));
+        self::assertEquals(['code' => 23, 'message' => 'Value "abc" is not numeric.'], json_decode($response->getContent(), true));
     }
 
     public function test_handle_correct_repositoryCalled()
